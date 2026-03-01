@@ -29,12 +29,28 @@
   <header class="border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900/80 backdrop-blur-sm sticky top-0 z-10">
     <nav class="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
       <a href="index.html" class="text-gray-800 dark:text-gray-100 font-semibold tracking-tight">Medical Crowdfunding</a>
-      <div class="flex items-center gap-4 text-sm">
+
+      <!-- Desktop nav -->
+      <div class="hidden sm:flex items-center gap-4 text-sm">
         <a href="index.html" class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">Home</a>
-        <a href="proofs.html" class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">Relevant Documents</a>
+        <a href="documents.html" class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">Relevant Documents</a>
         <a href="support.html" class="rounded-lg bg-gray-900 dark:bg-white px-4 py-2 font-medium text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors">Support Us</a>
       </div>
+
+      <!-- Mobile hamburger -->
+      <button type="button" id="nav-toggle" class="sm:hidden p-2 rounded-lg text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+        <svg id="nav-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="nav-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
     </nav>
+    <!-- Mobile menu -->
+    <div id="nav-menu" class="hidden sm:hidden border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 py-2">
+      <div class="max-w-2xl mx-auto px-4 flex flex-col gap-0">
+        <a href="index.html" class="nav-mobile-link block py-3 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 px-2 rounded-lg">Home</a>
+        <a href="documents.html" class="nav-mobile-link block py-3 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 px-2 rounded-lg">Relevant Documents</a>
+        <a href="support.html" class="nav-mobile-link block py-3 rounded-lg bg-gray-900 dark:bg-white text-white dark:text-black font-medium mx-2 mt-1 text-center">Support Us</a>
+      </div>
+    </div>
   </header>
 
   <main class="max-w-2xl mx-auto px-4 py-8 sm:py-12">
@@ -47,7 +63,7 @@
 
     <section class="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-6 sm:p-8 shadow-sm">
       <p class="text-gray-600 dark:text-gray-300 text-sm mb-6">
-        Click the button below to make a secure payment via Cashfree or Stripe.
+        Click the button below to make a secure payment via Cashfree.
       </p>
       <a id="payment-link" href="https://pay.cashfree.com/your-payment-link" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-lg bg-gray-800 dark:bg-white text-white dark:text-black hover:bg-gray-700 dark:hover:bg-gray-100 text-base font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500 dark:focus:ring-gray-400 focus:ring-offset-2 dark:focus:ring-offset-gray-800">
         <span>Donate now</span>
@@ -56,6 +72,12 @@
       <p class="text-xs text-gray-400 dark:text-gray-500 mt-4">
         You will be redirected to a secure payment page.
       </p>
+
+      <div id="contact-details" class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-600">
+        <p class="text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">Contact us</p>
+        <p class="text-sm text-gray-600 dark:text-gray-300">Phone: <a href="tel:+916291983055" class="underline hover:text-gray-900 dark:hover:text-white">+91 6291983055</a></p>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">Email: <a href="mailto:ladderFacts.medicalCrowdfunding@gmail.com" class="underline hover:text-gray-900 dark:hover:text-white">ladderFacts.medicalCrowdfunding@gmail.com</a></p>
+      </div>
     </section>
 
     <section class="mt-8">
@@ -73,10 +95,42 @@
     </div>
   </main>
 
-  <footer class="max-w-2xl mx-auto px-4 py-6 text-center text-xs text-gray-400 dark:text-gray-500 border-t border-gray-100 dark:border-gray-800 mt-12">
-    Thank you for your support.
+  <footer class="max-w-2xl mx-auto px-4 py-6 border-t border-gray-100 dark:border-gray-800 mt-12">
+    <p class="text-center text-xs text-gray-400 dark:text-gray-500 mb-4">Thank you for your support.</p>
+    <div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs">
+      <a href="about.html" class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-white">About</a>
+      <a href="contact.html" class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-white">Contact</a>
+      <a href="terms.html" class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-white">Terms & Conditions</a>
+      <a href="privacy.html" class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-white">Privacy Policy</a>
+      <a href="refund.html" class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-white">Refund Policy</a>
+    </div>
   </footer>
 
+  <script>
+    (function () {
+      var toggle = document.getElementById('nav-toggle');
+      var menu = document.getElementById('nav-menu');
+      var iconOpen = document.getElementById('nav-icon-open');
+      var iconClose = document.getElementById('nav-icon-close');
+      if (toggle && menu) {
+        toggle.addEventListener('click', function () {
+          menu.classList.toggle('hidden');
+          var isOpen = !menu.classList.contains('hidden');
+          toggle.setAttribute('aria-expanded', isOpen);
+          if (iconOpen) iconOpen.classList.toggle('hidden', isOpen);
+          if (iconClose) iconClose.classList.toggle('hidden', !isOpen);
+        });
+        document.querySelectorAll('.nav-mobile-link').forEach(function (link) {
+          link.addEventListener('click', function () {
+            menu.classList.add('hidden');
+            toggle.setAttribute('aria-expanded', 'false');
+            if (iconOpen) iconOpen.classList.remove('hidden');
+            if (iconClose) iconClose.classList.add('hidden');
+          });
+        });
+      }
+    })();
+  </script>
   <!-- Replace the href in #payment-link with your Cashfree or Stripe payment page URL -->
   <script>
     // Set your payment link here (Cashfree or Stripe). Example:

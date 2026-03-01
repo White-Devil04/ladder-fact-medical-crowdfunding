@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Fundraiser for medical treatment">
-  <title>Medical Crowdfunding — Home</title>
+  <meta name="description" content="Terms and Conditions - Medical Crowdfunding">
+  <title>Terms & Conditions — Medical Crowdfunding</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -12,8 +12,7 @@
       theme: {
         extend: {
           colors: {
-            muted: { DEFAULT: '#6b7280', light: '#9ca3af', bg: '#f9fafb', border: '#e5e7eb' },
-            accent: '#4b5563'
+            muted: { DEFAULT: '#6b7280', light: '#9ca3af', bg: '#f9fafb', border: '#e5e7eb' }
           }
         }
       }
@@ -30,21 +29,16 @@
   <header class="border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900/80 backdrop-blur-sm sticky top-0 z-10">
     <nav class="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
       <a href="index.html" class="text-gray-800 dark:text-gray-100 font-semibold tracking-tight">Medical Crowdfunding</a>
-
-      <!-- Desktop nav -->
       <div class="hidden sm:flex items-center gap-4 text-sm">
         <a href="index.html" class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">Home</a>
         <a href="documents.html" class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">Relevant Documents</a>
         <a href="support.html" class="rounded-lg bg-gray-900 dark:bg-white px-4 py-2 font-medium text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors">Support Us</a>
       </div>
-
-      <!-- Mobile hamburger -->
       <button type="button" id="nav-toggle" class="sm:hidden p-2 rounded-lg text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
-        <svg id="nav-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
-        <svg id="nav-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        <svg id="nav-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="nav-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
       </button>
     </nav>
-    <!-- Mobile menu -->
     <div id="nav-menu" class="hidden sm:hidden border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 py-2">
       <div class="max-w-2xl mx-auto px-4 flex flex-col gap-0">
         <a href="index.html" class="nav-mobile-link block py-3 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 px-2 rounded-lg">Home</a>
@@ -55,32 +49,21 @@
   </header>
 
   <main class="max-w-2xl mx-auto px-4 py-8 sm:py-12">
-    <h1 class="text-2xl sm:text-3xl font-semibold text-gray-800 dark:text-gray-100 leading-tight mb-2">
-      Crowdfunding for My Brother’s Medical Treatment
-    </h1>
-    <p class="text-gray-500 dark:text-gray-400 text-sm sm:text-base mb-8">
-      My Brother - Kundan Gupta, is suffering from CKD, stage 5 kidney failure. He is currently undergoing dialysis and is in need of a kidney transplant. We are raising funds to cover the medical expenses. Every contribution helps.
-    </p>
-
-    <section class="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-5 sm:p-6 shadow-sm">
-      <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Amount raised</p>
-      <div class="flex items-baseline gap-2 mb-3">
-        <span id="amount-raised" class="text-2xl sm:text-3xl font-semibold text-gray-800 dark:text-gray-100">—</span>
-        <span class="text-gray-500 dark:text-gray-400">of ₹20,00,000</span>
-      </div>
-      <div class="h-3 bg-gray-100 dark:bg-gray-700 rounded-full overflow-hidden">
-        <div id="progress-bar" class="h-full bg-gray-600 dark:bg-gray-400 rounded-full transition-all duration-500" style="width: 0%"></div>
-      </div>
-      <p id="percent-funded" class="text-xs text-gray-400 dark:text-gray-500 mt-2">0% funded</p>
-    </section>
-
-    <div class="mt-8 flex flex-col sm:flex-row gap-3">
-      <a href="documents.html" class="inline-flex items-center justify-center px-5 py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 text-sm font-medium transition-colors">
-        View Relevant Documents
-      </a>
-      <a href="support.html" class="inline-flex items-center justify-center px-5 py-3 rounded-lg bg-gray-800 dark:bg-white text-white dark:text-black hover:bg-gray-700 dark:hover:bg-gray-100 text-sm font-medium transition-colors">
-        Support us
-      </a>
+    <h1 class="text-2xl sm:text-3xl font-semibold text-gray-800 dark:text-gray-100 mb-6">Terms & Conditions</h1>
+    <div class="prose prose-gray dark:prose-invert max-w-none text-sm sm:text-base space-y-4 text-gray-600 dark:text-gray-300">
+      <p><strong>Last updated:</strong> March 2025</p>
+      <h2 class="text-lg font-medium text-gray-800 dark:text-gray-100 mt-6">1. Acceptance of Terms</h2>
+      <p>By accessing this website and making a contribution, you agree to be bound by these Terms and Conditions. If you do not agree, please do not use this website or make any donations.</p>
+      <h2 class="text-lg font-medium text-gray-800 dark:text-gray-100 mt-6">2. Nature of Contributions</h2>
+      <p>All contributions made through this website are voluntary donations for medical expenses. Contributions are not investments and do not entitle donors to any financial return or ownership.</p>
+      <h2 class="text-lg font-medium text-gray-800 dark:text-gray-100 mt-6">3. Use of Funds</h2>
+      <p>Funds raised will be used solely for the stated medical purpose: treatment, dialysis, and kidney transplant expenses for the beneficiary. We strive to use funds transparently and responsibly.</p>
+      <h2 class="text-lg font-medium text-gray-800 dark:text-gray-100 mt-6">4. Payment Processing</h2>
+      <p>Payments are processed through third-party payment gateway (Cashfree). We do not store your card or banking details. Please refer to the payment provider's terms for transaction security.</p>
+      <h2 class="text-lg font-medium text-gray-800 dark:text-gray-100 mt-6">5. Refunds</h2>
+      <p>Please refer to our <a href="refund.html" class="underline hover:text-gray-900 dark:hover:text-white">Refund Policy</a> for information on refund eligibility and process.</p>
+      <h2 class="text-lg font-medium text-gray-800 dark:text-gray-100 mt-6">6. Contact</h2>
+      <p>For questions about these terms, please contact us via the details on our <a href="contact.html" class="underline hover:text-gray-900 dark:hover:text-white">Contact</a> page.</p>
     </div>
   </main>
 
@@ -118,49 +101,6 @@
           });
         });
       }
-    })();
-  </script>
-  <script>
-    (function () {
-      var GOAL = 2000000; // ₹20,00,000
-      var amountEl = document.getElementById('amount-raised');
-      var barEl = document.getElementById('progress-bar');
-      var percentEl = document.getElementById('percent-funded');
-
-      function formatAmount(n) {
-        return '₹' + n.toLocaleString('en-IN');
-      }
-
-      fetch('data/contributter.csv')
-        .then(function (r) { return r.text(); })
-        .then(function (text) {
-          var lines = text.trim().split(/\r?\n/);
-          if (lines.length < 2) {
-            amountEl.textContent = formatAmount(0);
-            barEl.style.width = '0%';
-            percentEl.textContent = '0% funded';
-            return;
-          }
-          var header = lines[0].toLowerCase();
-          var cols = header.split(',');
-          var amtIdx = cols.indexOf('amt') >= 0 ? cols.indexOf('amt') : 2;
-          var total = 0;
-          for (var i = 1; i < lines.length; i++) {
-            var parts = lines[i].split(',');
-            if (parts.length <= amtIdx) continue;
-            var n = parseInt(parts[amtIdx].trim().replace(/[^\d]/g, ''), 10);
-            if (!isNaN(n)) total += n;
-          }
-          var percent = Math.min(100, (total / GOAL) * 100);
-          amountEl.textContent = formatAmount(total);
-          barEl.style.width = percent + '%';
-          percentEl.textContent = percent.toFixed(1).replace(/\.0$/, '') + '% funded';
-        })
-        .catch(function () {
-          amountEl.textContent = '—';
-          barEl.style.width = '0%';
-          percentEl.textContent = '0% funded';
-        });
     })();
   </script>
 </body>
