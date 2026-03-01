@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Medical condition proofs and bills">
+  <title>Medical Crowdfunding  — View Relevant Documents</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'media',
+      theme: {
+        extend: {
+          colors: {
+            muted: { DEFAULT: '#6b7280', light: '#9ca3af', bg: '#f9fafb', border: '#e5e7eb' }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'DM Sans', system-ui, sans-serif; }
+    .proof-thumb img { width: 100%; height: 200px; object-fit: cover; }
+    @media (max-width: 480px) {
+      .proof-thumb img { height: 140px; }
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-200 antialiased">
+  <header class="border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900/80 backdrop-blur-sm sticky top-0 z-10">
+    <nav class="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="text-gray-800 dark:text-gray-100 font-semibold tracking-tight">Medical Crowdfunding</a>
+      <div class="flex items-center gap-4 text-sm">
+        <a href="index.html" class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">Home</a>
+        <a href="proofs.html" class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">Relevant Documents</a>
+        <a href="support.html" class="rounded-lg bg-gray-900 dark:bg-white px-4 py-2 font-medium text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors">Support Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="max-w-2xl mx-auto px-4 py-8 sm:py-12">
+    <h1 class="text-2xl sm:text-3xl font-semibold text-gray-800 dark:text-gray-100 mb-1">
+      Relevant Documents
+    </h1>
+    <p class="text-gray-500 dark:text-gray-400 text-sm mb-8">
+      Bills, reports and prescriptions for transparency.
+    </p>
+
+    <a href="https://drive.google.com/drive/folders/1aIQUSqh_HkYXIiuuHMqRSfm3nznx7pdw" target="_blank" rel="noopener noreferrer" class="mb-8 flex items-center gap-3 rounded-lg border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 px-4 py-3 text-left text-sm text-gray-600 dark:text-gray-300 hover:border-gray-300 dark:hover:border-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+      <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400">
+        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
+      </span>
+      <span><strong class="text-gray-800 dark:text-gray-100">For more details</strong>, view all documents and photos on Google Drive.</span>
+      <svg class="ml-auto h-4 w-4 shrink-0 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+    </a>
+
+    <section class="mb-10">
+      <h2 class="text-lg font-medium text-gray-800 dark:text-gray-100 mb-4">Bills</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/Bills/Scanned_20260227-1935-01.jpg">
+          <img src="static/Bills/Scanned_20260227-1935-01.jpg" alt="Bill 1" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/Bills/Scanned_20260227-1935-08.jpg">
+          <img src="static/Bills/Scanned_20260227-1935-08.jpg" alt="Bill 2" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/Bills/Scanned_20260227-1935-15.jpg">
+          <img src="static/Bills/Scanned_20260227-1935-15.jpg" alt="Bill 3" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/Bills/Scanned_20260227-1935-23.jpg">
+          <img src="static/Bills/Scanned_20260227-1935-23.jpg" alt="Bill 4" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/Bills/Scanned_20260227-1938-01.jpg">
+          <img src="static/Bills/Scanned_20260227-1938-01.jpg" alt="Bill 5" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/Bills/Scanned_20260227-1938-11.jpg">
+          <img src="static/Bills/Scanned_20260227-1938-11.jpg" alt="Bill 6" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/Bills/Scanned_20260227-1938-12.jpg">
+          <img src="static/Bills/Scanned_20260227-1938-12.jpg" alt="Bill 7" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+      </div>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-lg font-medium text-gray-800 dark:text-gray-100 mb-4">Doctor prescription</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/Doctor%20Prescription/Scanned_20260226-1002-01.jpg">
+          <img src="static/Doctor%20Prescription/Scanned_20260226-1002-01.jpg" alt="Prescription 1" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/Doctor%20Prescription/Scanned_20260226-1002-02.jpg">
+          <img src="static/Doctor%20Prescription/Scanned_20260226-1002-02.jpg" alt="Prescription 2" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/Doctor%20Prescription/Scanned_20260226-1002-03.jpg">
+          <img src="static/Doctor%20Prescription/Scanned_20260226-1002-03.jpg" alt="Prescription 3" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/Doctor%20Prescription/Scanned_20260226-1002-04.jpg">
+          <img src="static/Doctor%20Prescription/Scanned_20260226-1002-04.jpg" alt="Prescription 4" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/Doctor%20Prescription/Scanned_20260226-1002-05.jpg">
+          <img src="static/Doctor%20Prescription/Scanned_20260226-1002-05.jpg" alt="Prescription 5" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+      </div>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-lg font-medium text-gray-800 dark:text-gray-100 mb-4">Blood reports</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/Blood%20Reports/Scanned_20260226-1020-01.jpg">
+          <img src="static/Blood%20Reports/Scanned_20260226-1020-01.jpg" alt="Blood report 1" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/Blood%20Reports/Scanned_20260226-1020-03.jpg">
+          <img src="static/Blood%20Reports/Scanned_20260226-1020-03.jpg" alt="Blood report 2" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/Blood%20Reports/Scanned_20260226-1020-08.jpg">
+          <img src="static/Blood%20Reports/Scanned_20260226-1020-08.jpg" alt="Blood report 3" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/Blood%20Reports/Scanned_20260226-1020-12.jpg">
+          <img src="static/Blood%20Reports/Scanned_20260226-1020-12.jpg" alt="Blood report 4" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/Blood%20Reports/Scanned_20260226-1020-18.jpg">
+          <img src="static/Blood%20Reports/Scanned_20260226-1020-18.jpg" alt="Blood report 5" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/Blood%20Reports/Scanned_20260226-1020-20.jpg">
+          <img src="static/Blood%20Reports/Scanned_20260226-1020-20.jpg" alt="Blood report 6" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/Blood%20Reports/Scanned_20260226-1020-21.jpg">
+          <img src="static/Blood%20Reports/Scanned_20260226-1020-21.jpg" alt="Blood report 7" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/Blood%20Reports/Scanned_20260226-1020-28.jpg">
+          <img src="static/Blood%20Reports/Scanned_20260226-1020-28.jpg" alt="Blood report 8" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+      </div>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-lg font-medium text-gray-800 dark:text-gray-100 mb-4">BCM report</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/BCM%20Report/Scanned_20260226-0948-01.jpg">
+          <img src="static/BCM%20Report/Scanned_20260226-0948-01.jpg" alt="BCM report 1" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/BCM%20Report/Scanned_20260226-0948-02.jpg">
+          <img src="static/BCM%20Report/Scanned_20260226-0948-02.jpg" alt="BCM report 2" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+      </div>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-lg font-medium text-gray-800 dark:text-gray-100 mb-4">Dialysis report</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/Dailysis%20Report/Scanned_20260226-0957-01.jpg">
+          <img src="static/Dailysis%20Report/Scanned_20260226-0957-01.jpg" alt="Dialysis report 1" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/Dailysis%20Report/Scanned_20260226-0957-09.jpg">
+          <img src="static/Dailysis%20Report/Scanned_20260226-0957-09.jpg" alt="Dialysis report 2" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/Dailysis%20Report/Scanned_20260226-0957-16.jpg">
+          <img src="static/Dailysis%20Report/Scanned_20260226-0957-16.jpg" alt="Dialysis report 3" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+        <button type="button" class="proof-thumb block rounded-lg overflow-hidden border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-sm hover:shadow transition-shadow focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 focus:ring-offset-2" data-src="static/Dailysis%20Report/Scanned_20260226-0957-24.jpg">
+          <img src="static/Dailysis%20Report/Scanned_20260226-0957-24.jpg" alt="Dialysis report 4" class="thumb w-full h-[200px] sm:h-[200px] object-cover" loading="lazy" width="200" height="200">
+        </button>
+      </div>
+    </section>
+
+    <div class="pt-4">
+      <a href="support.html" class="inline-flex items-center justify-center px-5 py-3 rounded-lg bg-gray-800 dark:bg-white text-white dark:text-black hover:bg-gray-700 dark:hover:bg-gray-100 text-sm font-medium transition-colors">
+        Support us
+      </a>
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 p-4" role="dialog" aria-modal="true" aria-label="View full image">
+    <button type="button" id="lightbox-close" class="absolute top-4 right-4 text-white/90 hover:text-white p-2 rounded-full hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-white" aria-label="Close">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <img id="lightbox-img" src="" alt="Full size" class="max-w-full max-h-[90vh] w-auto h-auto object-contain rounded">
+  </div>
+
+  <footer class="max-w-2xl mx-auto px-4 py-6 text-center text-xs text-gray-400 dark:text-gray-500 border-t border-gray-100 dark:border-gray-800 mt-12">
+    Thank you for your support.
+  </footer>
+
+  <script>
+    (function () {
+      var lightbox = document.getElementById('lightbox');
+      var lightboxImg = document.getElementById('lightbox-img');
+      var closeBtn = document.getElementById('lightbox-close');
+
+      function openLightbox(src) {
+        lightboxImg.src = src;
+        lightbox.classList.remove('hidden');
+        lightbox.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+        closeBtn.focus();
+      }
+
+      function closeLightbox() {
+        lightbox.classList.add('hidden');
+        lightbox.classList.remove('flex');
+        document.body.style.overflow = '';
+      }
+
+      document.querySelectorAll('.proof-thumb').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var src = this.getAttribute('data-src');
+          if (src) openLightbox(src);
+        });
+      });
+
+      closeBtn.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', function (e) {
+        if (e.target === lightbox) closeLightbox();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeLightbox();
+      });
+    })();
+  </script>
+</body>
+</html>
