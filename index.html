@@ -148,11 +148,13 @@
           for (var i = 1; i < lines.length; i++) {
             var parts = lines[i].split(',');
             if (parts.length <= amtIdx) continue;
-            var n = parseInt(parts[amtIdx].trim().replace(/[^\d]/g, ''), 10);
+            var raw = parts[amtIdx].trim().replace(/,/g, '');
+            if (!raw) continue;
+            var n = parseFloat(raw);
             if (!isNaN(n)) total += n;
           }
           var percent = Math.min(100, (total / GOAL) * 100);
-          amountEl.textContent = formatAmount(total);
+          amountEl.textContent = formatAmount(Math.round(total));
           barEl.style.width = percent + '%';
           percentEl.textContent = percent.toFixed(1).replace(/\.0$/, '') + '% funded';
         })
