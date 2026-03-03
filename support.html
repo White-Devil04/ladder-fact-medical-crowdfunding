@@ -164,6 +164,7 @@
             placeholder.textContent = 'No contributors yet.';
             return;
           }
+          
           var header = lines[0].toLowerCase();
           var nameIdx = header.includes('name') ? header.split(',').indexOf('name') : 1;
           var amtIdx = header.includes('amt') ? header.split(',').indexOf('amt') : 2;
