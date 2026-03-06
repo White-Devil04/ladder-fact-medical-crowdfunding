@@ -131,7 +131,7 @@
         return '₹' + n.toLocaleString('en-IN');
       }
 
-      fetch('data/contributter.csv')
+      fetch('data/contributer.csv')
         .then(function (r) { return r.text(); })
         .then(function (text) {
           var lines = text.trim().split(/\r?\n/);

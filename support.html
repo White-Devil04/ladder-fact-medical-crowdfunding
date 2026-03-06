@@ -67,7 +67,7 @@
         Click the button below to make a secure payment via Cashfree.
       </p> -->
       <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
-        You can support the treatment by scanning the QR code below from your UPI app.
+        You can support the treatment by scanning any QR code below from your UPI app.
       </p>
       <!-- <a id="payment-link" href="https://pay.cashfree.com/your-payment-link" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-lg bg-gray-800 dark:bg-white text-white dark:text-black hover:bg-gray-700 dark:hover:bg-gray-100 text-base font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500 dark:focus:ring-gray-400 focus:ring-offset-2 dark:focus:ring-offset-gray-800">
         <span>Donate now</span>
@@ -83,10 +83,13 @@
         <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">Email: <a href="mailto:ladderFacts.medicalCrowdfunding@gmail.com" class="underline hover:text-gray-900 dark:hover:text-white">ladderFacts.medicalCrowdfunding@gmail.com</a></p>
       </div> -->
       <div class="flex flex-col items-center gap-3">
-        <img src="static/payment_qr.jpg" alt="Payment QR code" class="w-56 h-auto rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm" loading="lazy">
-        <p class="text-sm font-bold text-gray-800 dark:text-gray-100 text-center ">
+        <div class="flex justify-center gap-6 flex-wrap">
+          <img src="static/Paymet_QR_Kundan.jpeg" alt="Payment QR code" class="w-56 h-auto rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm" loading="lazy">
+          <img src="static/Paymet_QR_RT.jpeg" alt="Payment QR code" class="w-56 h-auto rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm" loading="lazy">
+        </div>
+        <!-- <p class="text-sm font-bold text-gray-800 dark:text-gray-100 text-center ">
           UPI ID: Q054547379@ybl
-        </p>
+        </p> -->
         <p class="text-xs text-gray-500 dark:text-gray-400 text-center">
           Open your preferred UPI/payment app and scan this code to contribute.
         </p>
@@ -156,7 +159,7 @@
         return '₹' + n.toLocaleString('en-IN');
       }
 
-      fetch('data/contributter.csv')
+      fetch('data/contributer.csv')
         .then(function (r) { return r.text(); })
         .then(function (text) {
           var lines = text.trim().split(/\r?\n/);
